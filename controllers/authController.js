@@ -10,7 +10,7 @@ const qs = require("qs");
 
 const dotenv = require("dotenv");
 
-dotenv.config({ path: "./../config.env" });
+dotenv.config({ path: "./../.env" });
 const createJWTtoken = (id) => {
   return jwt.sign({ id }, process.env.SECRET_FOR_TOKEN, {
     expiresIn: process.env.TOKEN_EXPIRES_IN,
